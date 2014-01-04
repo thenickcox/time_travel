@@ -1,13 +1,15 @@
 class TripsController < ApplicationController
-  # GET /trips
-  # GET /trips.json
   def index
     @trips = Trip.all
+<<<<<<< Updated upstream
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @trips }
     end
+=======
+    render json: @trips
+>>>>>>> Stashed changes
   end
 
   # GET /trips/1

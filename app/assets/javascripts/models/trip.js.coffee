@@ -9,3 +9,17 @@ App.Trip = DS.Model.extend
   price: DS.attr('number')
   location: DS.attr('string')
   activity: DS.attr('string')
+<<<<<<< Updated upstream
+=======
+  hotels: DS.hasMany('TimeTravel.Hotel')
+  extras: DS.hasMany('TimeTravel.Extras')
+
+
+  startMoment: (->
+    moment @get('start_date')
+  ).property('start_date')
+
+  endMoment: (->
+    moment @get('end_date')
+  ).property('end_date')
+>>>>>>> Stashed changes
